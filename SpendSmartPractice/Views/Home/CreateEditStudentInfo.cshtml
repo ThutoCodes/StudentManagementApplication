@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Students";
+}
+
+@model SpendSmartPractice.Models.Student
+<div class="text-center">
+    <h1 class="display-4">Capture or edit Student Information</h1>
+
+</div>
+<form asp-action="FormSubmission" asp-controller="Home">
+
+    <label>Id</label>
+    <input class="form-control" type="number" placeholder="0" asp-for="StudentId" />
+    <label>Name</label>
+    <input class="form-control" type="text" placeholder="Enter Name" asp-for="Name" />
+
+    <label class=" mt-4">Surname</label>
+    <input class="form-control" type="text" placeholder="Enter Surname" asp-for="Surname" />
+
+        <label class="mt-4">age</label>
+    <input class="form-control" type="number" placeholder="Enter Age" asp-for="age" />
+
+    <label class ="mt-4">Course</label>
+    <input class="form-control" type="text" placeholder="Enter Course" asp-for="Course" />
+
+    <label class="mt-4">Registered</label>
+    <input class="form-control" type="number" placeholder="0" asp-for="Registered" />
+
+    <button class="btn btn-primary mt-4" type="submit">Submit </button>
+
+
+
+</form>
